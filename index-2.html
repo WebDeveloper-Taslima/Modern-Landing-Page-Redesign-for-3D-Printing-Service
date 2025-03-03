@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charSet="utf-8" />
+    <title>Home Two - Printify - Printing company NextJS Template</title>
+    <meta name="next-head-count" content="3" />
+    <link rel="preload" href="/_next/static/css/e9bf4594beb5bd7bf2a4.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/e9bf4594beb5bd7bf2a4.css" data-n-g="" />
+    <link rel="preload" href="/_next/static/css/c4e424ed465d80916e30.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/c4e424ed465d80916e30.css" data-n-p="" /><noscript data-n-css=""></noscript>
+    <link rel="preload" href="/_next/static/chunks/main-11b9c9a9b688a49aa427.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/framework.d2e6186d001d2275b0af.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/commons.124d507c7ca523d1158f.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/pages/_app-f757b599e952af083e8c.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/acc17c9f5149dfc55a5e1bab6f73a798bd8a50cc.3bfaba4f46872ff70d86.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/d63c7bc0eb1546891a38250081b4f73e1bdf5be4.5f566de1c7ef8d8e1b69.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/8ef2371b12a2fe8fb95a47ca30ae6fb034309188.4d32e18a717ec11f8dbf.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/e9d1e1c6b77f1ea8907e4a5a6a11c9d3d88499a6.93c729659022d59b83c0.js" as="script" />
+    <link rel="preload" href="/_next/static/chunks/pages/index-2-2a288c8670641db97c37.js" as="script" />
+</head>
+
+<body>
+    <div id="__next">
+        <div id="wrapper">
+            <header class="header home-page-one">
+                <nav class="navbar navbar-default header-navigation   stricky slideIn animated">
+                    <div class="thm-container clearfix">
+                        <div class="navbar-header"><a class="navbar-brand" href="/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIUAAABACAMAAAADIUQJAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAANkaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjMtYzAxMSA2Ni4xNDU2NjEsIDIwMTIvMDIvMDYtMTQ6NTY6MjcgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6MzU0ODYxQTdFQzBERTQxMTlFQkFBQ0Y0OUY2QzBFQUUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjI3NTI0RjI2NDdCMTFFODlGMjc5OUIzMTFEOTUzM0MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjI3NTI0RjE2NDdCMTFFODlGMjc5OUIzMTFEOTUzM0MiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RDNGQ0NCQTU4OTUyRTgxMTg5NjJDOERDRkExQkY5REUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzU0ODYxQTdFQzBERTQxMTlFQkFBQ0Y0OUY2QzBFQUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4rPz3MAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAwBQTFRFTGlxISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhI0BWISEhISEhISEhISEhISEhISEhISEhISEhIjNBISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhKITG//OvISEhISEhISEhISEhISEhISEhJoPGKITG9phRISEhISEhISEhKITGKITGKYXHKITG////KoXF/7dY/0YrKYXH/////8ckI4HF/8ou/9FG////////////////KITG///9KoXHKYXG/skxJ4TE/zgn/zouKITG/9IZIYDF////IoHF/z8r/rAA/rMA/////////////+bi/////zET/yEB/x4A/yAA/+nm/+jp/////yYHLYfH/so1/0ctKYXG/skx////KITG/////2dE/0Qq/zQX/so0KITG/0Qp/0Mo/4F2AHDx/skwebr7/9El/skx//+I/tsr/tU6/1hL/xQE///5/dIY/9DqH3/EAGi5B3G9PJr2AGi5AGu6/29m/zobnc///+qm/////+yx////ISEh/////r4DJ4TGAW68BnG9EXfB/xwAGXvCK4bH/yIC/sES/r8J/wAA//X1/sYk///9aarY/+eg/9JQ/zQW/wcA/9Zh/+Tg/7qv/2xXyeH0/9hp/0Qp/sgu/zwg/sMc/9px/6SX/rUA/s0//1E5AGi5/0wzAGm6//v6cK3a/8e/T5vR/1Y+mMXn/zcd/8O7/95+//je/rMA9/r9//HviLvfIYDF/+moRpbOe7TcNIvK/+KP/9rV/xEAq9Dq/+Dc/yoN/+uw//TN/+Wa/rkA//DA+P7//5iK/41+4e736/T6//np0+bzqc7qAGbL/7+1/2RNr9Hq/2ZQ5fD4/wMA/3ll/+CH//usk8byvNrz//zu/7Gk/ycIMX9udwAAAKN0Uk5TALzzJzbkgJ7XYngME0IB+P1xrsoWOP4DZE2O9n5YBpKW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" alt="Awesome Image"/></a>
+                            <span
+                                class="mobile-menu__toggler"><i class="fa fa-bars"></i></span>
+                        </div>
+                        <div class="collapse show navbar-collapse main-navigation mainmenu " id="main-nav-bar">
+                            <ul class="nav navbar-nav navigation-box">
+                                <li class=""><a href="/">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/">Home 01</a></li>
+                                        <li><a href="/index-2">Home 02</a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a href="/about">About</a></li>
+                                <li class=""><a href="/services">Services</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/all-services">All Services</a></li>
+                                        <li><a href="/services">Services</a></li>
+                                        <li><a href="/service-details">Service Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a href="/pricing">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/pricing">Pricing</a></li>
+                                        <li><a href="/404">404 Page</a></li>
+                                        <li><a href="/project">Project Page</a></li>
+                                        <li><a href="/project-details">Project Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a href="/blog">News</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="/blog">News Page</a></li>
+                                        <li><a href="/blog-details">News Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class=""><a href="/contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="right-side-box">
+                            <div class="social"><a href="#" class="fab fa-twitter hvr-pulse"></a><a href="#" class="fab fa-pinterest hvr-pulse"></a><a href="#" class="fab fa-facebook-f hvr-pulse"></a><a href="#" class="fab fa-youtube hvr-pulse"></a></div>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="banner-style-two">
+                <div class="thm-container-fluid clearfix">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="swiper-container banner-carousel-two">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                                        <div class="item">
+                                            <div class="single-banner-carousel text-center"><span>We believe in the power of great design</span>
+                                                <h2>Quality Printing Service
+                                                </h2><a class="thm-btn yellow-bg" href="/pricing">Our Pricing</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-swiper-slide-index="0">
+                                        <div class="item">
+                                            <div class="single-banner-carousel text-center"><span>We believe in the power of great design</span>
+                                                <h2>Quality Printing Service
+                                                </h2><a class="thm-btn yellow-bg" href="/pricing">Our Pricing</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide" data-swiper-slide-index="1">
+                                        <div class="item">
+                                            <div class="single-banner-carousel text-center"><span>We believe in the power of great design</span>
+                                                <h2>Quality Printing Service
+                                                </h2><a class="thm-btn yellow-bg" href="/pricing">Our Pricing</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                                        <div class="item">
+                                            <div class="single-banner-carousel text-center"><span>We believe in the power of great design</span>
+                                                <h2>Quality Printing Service
+                                                </h2><a class="thm-btn yellow-bg" href="/pricing">Our Pricing</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination" id="slider-two-carousel-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6"><img src="/_next/static/images/banner-featured-1-1-59a912803bd27780244fd211646b2c25.png" class="float-left" alt="Awesome Image" /></div>
+                    </div>
+                </div>
+            </section>
+            <section class="welcome-section sec-pad">
+                <div class="thm-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="welcome-img-box"><img src="/_next/static/images/welcome-1-1-58769ab03af6ca7ae3c4a488494b38b8.png" alt="Awesome Image" /></div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="welcome-content">
+                                <div class="title">
+                                    <p>Welcome to printify</p>
+                                    <h3>Dream it. Print it.</h3>
+                                </div>
+                                <p>When we say we’re not happy until you’re happy, we really do mean it. So whether it’s a typo or an image that didn’t print quite the way you hoped, we’ll do everything we can to fix it. We love great design and believe
+                                    it can work wonders for every business. That’s why we make it simple to create beautiful, expertly crafted business stationery.</p><a class="thm-btn yellow-bg" href="/about">Learn More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="service-style-two">
+                <div class="overlay"></div>
+                <div class="thm-container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="service-content"><span> Next printing level </span>
+                                <h2>Printify Unique Features </h2>
+                                <p>Take your business cards, Flyers and Stickers to the next level with exclusive and innovative features.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="text-center col-md-4">
+                                    <div class="unique-feature"><img src="/_next/static/images/unique-feature-hand-fe4580e4091920b65c959c9c2fd4bd62.png" alt="Business 
+ Cards" />
+                                        <div class="content"><i class="printify-icon-white-sheets"></i>
+                                            <a href="/service-details">
+                                                <h3>Business Cards
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center col-md-4">
+                                    <div class="unique-feature"><img src="/_next/static/images/unique-feature-hand-fe4580e4091920b65c959c9c2fd4bd62.png" alt="Flyer 
+ Printing" />
+                                        <div class="content"><i class="printify-icon-brochure-folded"></i>
+                                            <a href="/service-details">
+                                                <h3>Flyer Printing
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center col-md-4">
+                                    <div class="unique-feature"><img src="/_next/static/images/unique-feature-hand-fe4580e4091920b65c959c9c2fd4bd62.png" alt="Sticker 
+ Printing" />
+                                        <div class="content"><i class="printify-icon-circular-sticker"></i>
+                                            <a href="/service-details">
+                                                <h3>Sticker Printing
+                                                </h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="video-box-design-guide sec-pad service-tab-box">
+                <div class="thm-container">
+                    <div class="tab-title">
+                        <ul class="list-inline">
+                            <li class=" "><a class="hvr-bounce-to-bottom" href="service-tab-0"><i class="printify-icon-t-shirt-with-square"></i><h3>T-Shirt
+ Printing</h3></a></li>
+                            <li class="active"><a class="hvr-bounce-to-bottom" href="service-tab-1"><i class="printify-icon-brochure-folded"></i><h3>Flyer 
+ Printing</h3></a></li>
+                            <li class=" "><a class="hvr-bounce-to-bottom" href="service-tab-2"><i class="printify-icon-continuous-feed-paper"></i><h3>Poster 
+ Printing</h3></a></li>
+                            <li class=" "><a class="hvr-bounce-to-bottom" href="service-tab-3"><i class="printify-icon-circular-sticker"></i><h3>Sticker
+ Printing</h3></a></li>
+                            <li class=" "><a class="hvr-bounce-to-bottom" href="service-tab-4"><i class="printify-icon-white-sheets"></i><h3>Postcard 
+ Printing</h3></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="single-tab-content tab-pane show fade in active animated fadeIn">
+                            <div class="sec-title text-center"><span>Our services</span>
+                                <h3>Flyer Printing</h3>
+                                <p>Choose the perfect flyer design, You can’t go wrong. We start at premium and go all the way to extra fancy. There’s Original single-sided flyers (writeable on one side) that you can send without an envelope, Original double-sided
+                                    flyers (more impactful) and luxe flyers (extra thick and luxurious).</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="video-box"><img src="/_next/static/images/video-box-1-1-71377ac929e346cf5a03d990fd5caa43.jpg" alt="Awesome Image" />
+                                        <div class="content">
+                                            <h3>Printfinity Makes Every Card Unique
+                                            </h3>
+                                        </div><a href="#" class="video-btn video-popup"><i class="fas fa-play"></i></a></div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="design-guideline">
+                                        <div class="row">
+                                            <div class="col-md-7">
+                                                <div class="guide-content">
+                                                    <h3>Download a Design <br/> Guideline</h3>
+                                                    <ul class="list-box">
+                                                        <li><span>Bleed:</span> 2.91” x 1.26”</li>
+                                                        <li><span>Trim:</span> 2.75” x 1.10”</li>
+                                                        <li><span>Safe:</span> 2.6” x 0.94”</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5">
+                                                <div class="row version-row">
+                                                    <div class="col-6">
+                                                        <div class="single-version">
+                                                            <div class="version"><span>psd</span><i class="fas fa-angle-double-down"></i></div>
+                                                            <h4>Photoshop</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="single-version">
+                                                            <div class="version ai"><span>ai</span><i class="fas fa-angle-double-down"></i></div>
+                                                            <h4>Illustrator</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="single-version">
+                                                            <div class="version indesign"><span>indd</span><i class="fas fa-angle-double-down"></i></div>
+                                                            <h4>InDesign</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="single-version">
+                                                            <div class="version jpg"><span>jpg</span><i class="fas fa-angle-double-down"></i></div>
+                                                            <h4>Jpeg</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="guide-line-img-box"><img src="/_next/static/images/download-guide-line-1-1-4f186ff07a1f46ed035add641aa6d1e0.jpg" alt="Awesome Image" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="testi-carousel-wrapper">
+                <div class="overlay"></div>
+                <div class="thm-container">
+                    <div class="swiper-container testi-carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1">
+                                <div class="item single-testimonials">
+                                    <div class="img-box"><img src="/_next/static/images/testi-1-2-653d9dacef39b4800b0e9b5206f64179.jpg" alt="Awesome Image" /></div>
+                                    <div class="text-box">
+                                        <h3>This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</h3>
+                                        <p>Mildred Rodriguez</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="0">
+                                <div class="item single-testimonials">
+                                    <div class="img-box"><img src="/_next/static/images/testi-1-1-b5e1f057ed818da2c8c504a53b91d1d7.jpg" alt="Awesome Image" /></div>
+                                    <div class="text-box">
+                                        <h3>This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</h3>
+                                        <p>Christine Eve</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="1">
+                                <div class="item single-testimonials">
+                                    <div class="img-box"><img src="/_next/static/images/testi-1-2-653d9dacef39b4800b0e9b5206f64179.jpg" alt="Awesome Image" /></div>
+                                    <div class="text-box">
+                                        <h3>This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</h3>
+                                        <p>Mildred Rodriguez</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                                <div class="item single-testimonials">
+                                    <div class="img-box"><img src="/_next/static/images/testi-1-1-b5e1f057ed818da2c8c504a53b91d1d7.jpg" alt="Awesome Image" /></div>
+                                    <div class="text-box">
+                                        <h3>This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</h3>
+                                        <p>Christine Eve</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" id="testimonials-carousel-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="pricing-section sec-pad">
+                <div class="thm-container">
+                    <div class="sec-title text-center"><span>Choose best plan</span>
+                        <h3>Plans &amp; Pricing</h3>
+                        <p>There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="single-pricing text-center"><span class="price-label">Standard plan</span>
+                                <h3><span class="price-currency">$</span>25.00</h3><i class="printify-icon-continuous-feed-paper"></i>
+                                <div class="line"></div>
+                                <ul class="list-box">
+                                    <li>Rounded &amp; Colored</li>
+                                    <li>Preimum Paper</li>
+                                    <li>Extra Thick</li>
+                                </ul><a class="thm-btn yellow-bg" href="/contact">Select Plan</a></div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="single-pricing text-center"><span class="price-label">Premium plan</span>
+                                <h3><span class="price-currency">$</span>35.00</h3><i class="printify-icon-brochure-folded"></i>
+                                <div class="line"></div>
+                                <ul class="list-box">
+                                    <li>Rounded &amp; Colored</li>
+                                    <li>Preimum Paper</li>
+                                    <li>Extra Thick</li>
+                                </ul><a class="thm-btn yellow-bg" href="/contact">Select Plan</a></div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="single-pricing text-center"><span class="price-label">Ultimate plan</span>
+                                <h3><span class="price-currency">$</span>45.00</h3><i class="printify-icon-circular-sticker"></i>
+                                <div class="line"></div>
+                                <ul class="list-box">
+                                    <li>Rounded &amp; Colored</li>
+                                    <li>Preimum Paper</li>
+                                    <li>Extra Thick</li>
+                                </ul><a class="thm-btn yellow-bg" href="/contact">Select Plan</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cta-style-three">
+                <div class="thm-container text-center"><span>Thickest business card</span>
+                    <h2>Try Our New Premium Extra Thick Cards.</h2><a class="thm-btn" href="/contact">Get Sample</a></div>
+            </section>
+            <section class="blog-style-one sec-pad">
+                <div class="thm-container">
+                    <div class="sec-title text-center"><span>Blog posts</span>
+                        <h3>Latest News</h3>
+                        <p>There are many variations of passages of lorem Ipsum available, but
+                            <!-- --><br/>the majority have suffered alteration in some form.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="single-blog-post">
+                                <div class="text-box hvr-bounce-to-bottom">
+                                    <a href="/blog-details">
+                                        <h3>What final touches can i add</h3>
+                                    </a>
+                                    <p>We offer Letterpress, Spot Gloss, Raised Spot Gloss or Gold Foil. There are many people variation of passages of lorem Ipsum available in the majority alteration in some.</p>
+                                </div>
+                                <div class="img-box"><img src="/_next/static/images/blog-1-1-5e1145517ff205731251c1d776355c61.jpg" alt="What final touches can i add" />
+                                    <div class="meta-info"><a href="/blog-details"><i class="fas fa-user"></i> by <!-- -->admin</a><a href="/blog-details"><i class="fas fa-calendar"></i> <!-- -->20 March, 2018</a><a href="/blog-details"><i class="fas fa-comments"></i> <!-- -->3 Comments</a></div>
+                                    <a
+                                        class="read-more fas fa-angle-right" href="/blog-details"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="single-blog-post">
+                                <div class="text-box hvr-bounce-to-bottom">
+                                    <a href="/blog-details">
+                                        <h3>How to brand a tattoo studio</h3>
+                                    </a>
+                                    <p>We offer Letterpress, Spot Gloss, Raised Spot Gloss or Gold Foil. There are many people variation of passages of lorem Ipsum available in the majority alteration in some.</p>
+                                </div>
+                                <div class="img-box"><img src="/_next/static/images/blog-1-2-d655b19811db7cfd8855a9b461e6011a.jpg" alt="How to brand a tattoo studio" />
+                                    <div class="meta-info"><a href="/blog-details"><i class="fas fa-user"></i> by <!-- -->admin</a><a href="/blog-details"><i class="fas fa-calendar"></i> <!-- -->20 March, 2018</a><a href="/blog-details"><i class="fas fa-comments"></i> <!-- -->3 Comments</a></div>
+                                    <a
+                                        class="read-more fas fa-angle-right" href="/blog-details"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="brand-carousel-wrapper">
+                <div class="thm-container">
+                    <div class="swiper-container brand-carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4">
+                                <div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAVCAYAAACNDipWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFODEwODU5NjA4MjA2ODExODIyQUVGNUVFNkQ5RUQ4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozNkM0MEM4QzZCM0UxMUU4QjJBRjk1MkY4QUMzMDM5QiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozNkM0MEM4QjZCM0UxMUU4QjJBRjk1MkY4QUMzMDM5QiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTgxMDg1OTYwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTgxMDg1OTYwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5E4h35AAAGh0lEQVR42uyaC0yWVRjHESxvqFyE0ETzMkUlzMmaMy9I09Ko6dI2yybmnF1kw1Gm4XA5u2yma2FlWK4knYlJWMMShwulZCpCgVx0mRlXDQhQUoGv/2P/dzs7nff7uMTE9T3bbx/ve55z3vc8z7k8z3np4XA4PGwkHCwDp8BR8KuHW+446UEHjwMbQSs4BsaDkWAMWAkCwANgLOjrpL0WsA/sdJu2ezn4AFjAezkgmjNWHB0EDgFR7AfmgWf4e5ehTRkk/qDObd7u42CZtdOU++KcCaDcSd17uITH8m9VhoPfblOfZnPAyqrz1//dwZ6Ge1WcneUu6ore22AUeAvc7CZ9Esd6g17u+ftvB+eBh8GP7WjjKngNRIDLbpN2Pwd7cm/14H47soNt/QDmc692JdNBKigGp8FmMIBl8rsJ5IIS6j1k044MxnRwDhzmtUl8wRZQwNgiQ4k5VJGYIg5kg/Nsc7FSHgb2g1L2dxm3ozIwFEwEhdyyXgdnqPsJuFdp5wUQYrPtrQVevPZm8JvLdtLADK3Oe2ADs5402uIEeO5WqezB4BhoAFG8tmM66A/62JTLnl4EZjhpYwloARfAdvA1aAargD/4GVSAtWA5yGL501o7ct0KzoB3wAFwHRx0/CMDqTcIlILLIAG8BDKps0Zp725wmG1+C95nX+TZ3uBBcBWUgC1gL7gBjrOt+8Fj/DsHVIMPwMe07SXgy2flgTSDbaTdRtALDAD5bGc9bZFJ2y1T6ojvzvLdMmmLbL7Heg8+VIwT4sK5wgka8XtDWU8QDvbzgdEGnfvANb5Ib+X+YNZPAvVgtFLmRf0/QRDvBfA6nfUs3fl0kOrgz8DvfIY6ED8CN8Ew3lvHetGaXjDfQZx9UhvcEXSy7uACDixLbwoHShyvxWFNnCxqP8tBMq8Taauxms4hDoKhioNFYrT3ThE9uVgEjtA4rhw8AWwE4w1lMgNmgSHAj055VdN5k0YdbqjvzQ4lGsrC2Yl1vI6lI8cYdFMUB/vzeXEGvUDOhheBJ2dKuk2/57DNxw1lOwwOXmDQKwQ7lYEu779YKZ/Nuo9w8DdywOvthFIvQXFwMZ2q6j0hSrL/pnDNz2vD3in7SwI4ayi7wRMvib5rwKMgimmLJTPBSXDRUF/2rz5M2XQ5xah9Kq+ncq8pNege1E7jeoJGMFkjGNSCITzQCeAhjV3MIFnCd4aybwz3Cgz3apTIXuKALLBQKV8CKsAREMq46LhN25e0uKTQEPvI82513sqDO3IUGcKgzIeBgJxkXQDNdPgiBhgZ1PcD+TZt+ShRuUkkrx7EvwNBtY1epfK3P3+3O+lDjdJumY3OYHCFfdLlD8O9622w3S6wjYFUK4O+JNrQjzq1Tmyhnj3Y5vuWg691MHIuJr6MGmXGNoBEHldW0mE+PDypp65J6jSn6NJfcUCDFpXqEbPe5kpG6yaRVWCENsh0EQMOdPJeHZH9tNNcrqDSTrI6+ziwTNKPtmxXHhzUiXSrlmnFCKYScpS5R07K6Ixm5Rh0CketLvkc+ZGGMhnRo7lKWMtUqDLSVYnUlvZmLsOnbZD3K+JvpE3/ingGP8lQNq+DNqtnWrOIy/NPyuomS24TmGWoN4jfDnLb4+Awm+WnPdKq/L2Uo3AFZ10j7++gobYaDllE53PmneO1snj+fsrf3Rz1GzS9MJ6jW1LNfXU1B4QqgVwmI7i/JjF3NOXcaRx8q7X7wdrz2iu7OEDmsO+WNLGvC/mRR5WXufK27YMOI66v2hBBu8KXUbCDqYeE9F+CyZpeLHUkf90K9oAq8BRTi3OgjNFtFCPJViWCtniD7XwBngebQR3zTTVNCmDuWgNeYUS8hs+UexOVKD6Hac8+5qRHqefFOiLbwEzwLDjP6FuPoocZ7CPR7m7tnpUatTD7UMv8+N5VTIGk7Q9pi3gX7QrTHMqFJMeT/gMnJ2sd7GWjNxdkgEo6JJmOsDr2Lg8nKphzP2lzqBLD9ENyyotgEw1Ro+WrfhxMRSwrpbF0R/Rl+lFAvQIewFjly5kLX2FqIu85jgcX0tYIkMrBor9vvHZAYZHNAxaTnXw40EpoqyxOBFVHBt4KQ13J31PVz4WylO3t5DIdwVTpdn5NupNkFNO9pUqA1SUfG5oY1XVWfnH7rF0SzQwmtau/Jp1UIt3OikMJqtzi3PbRdG6X2cvKg+UgIsbD+b/jtEUk+V6l5HFusZfenFSJXfmQvwUYAGeyvx8Izw17AAAAAElFTkSuQmCC"
+                                        alt="Awesome Image" /></div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="0">
+                                <div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAXCAYAAADAxotdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBNjJBMzk5QjA4MjA2ODExODIyQUVGNUVFNkQ5RUQ4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGODI1RkRDQjZBRjAxMUU4QTAxMEUwOTM2QzgzNjdCRiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGODI1RkRDQTZBRjAxMUU4QTAxMEUwOTM2QzgzNjdCRiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTYyQTM5OUIwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTYyQTM5OUIwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5PKEfOAAAHhUlEQVR42uyad2xXVRTHf+zKkJYlskHKsCyFMIwRq7RRhsI/IqASibKNCQoJyKoGKCLiRLQI4oAAgixBGUItiAIyStlQhmULFEqlxcLP702+j5wc7xs/1CYmPcknv/vuPXeeO94791csHA6HiuQ/l9KgL6gBkgqz4uL/QhmJYAVILrLj36QYeAEcAJ+AS4XegH+4gl8Fb7IjRiqCK0V2vSX3gj3i+SGQ9n9ZwX2UcUMqXCShUCMRvgl2FnYDSnqkVQU9wQeWtEfALItBg24H0aAWO30QFNxG2yuBmmxDJrhaSGNWGTTn+Jj2Z4G9IMei21SED7voeJ3brdnHUuAk2ALyImqt2aIV5cAYkANGW9Kbg+ywXUIe1AFTwBGV5yr4ElRT+s+ABWSiaNtYcFSVkU+9uiL/WyJ/ok/byoNUsI08rdJLg6Fgp0u/C0AaGAAqiXxzhM4FsMZCL1XXfeArkGupx8R9DKr79OcWIUvh+1nYH6CKSq9sGVxH/nSppAL4kEbwkj2grMi3WKTNBbXAPp8yToOazD9LxM/wGYjxQjcTRIm07uBwOLj8LvL+7KN7EzQUkyyFcX5yFrQX9dQHq2l8szifBCXACtnJBK5aR95Tg2AyrArYMYfW4JBF9wTYouoz8rLIe0DET+QEcOQGB28+yFBlpDB/PxG308O4d3MXcaS76O+7lrafA4vAO2A62MjJ7cg2UXa2j6HWUe8usMuSbvL/BHZwl9BpDURdydxp3gCTwUtmYTiJrdSWcEPMLIckn8buV/rtLAZcTqM7OmY7OyjSlzA+SnVIGnee2oqLcYXLVWziY9UWWt7FwClCb6Uw7lzV9l9BF1DcUsY3Qm+2mDhSHvbY4dKVrtmpeoCSQq8q+EzprRTpU/k7ipNvBBhpIsqoQZYD7dA1wNaxXujX5kyXA/yiSweThV6amHC27WyQSxk9lW4Zxp8ScR0t+eLERMrjpNBtMjJJDbZmq9AdxriOqowYl7wzld4CdVSF1GRepPQbi8VifqN5Rpv2Roc48GGP2WaUzwc4F2aLPEtVWl+PwZks9L5lXB9L+eM8ynhW6ZZm/HwRN8KSb4Uyool7kDuYIyN9zm8z6JeFfgLjB4q44y5526mFs85nIoW4s0oZ5PeStVZl2KwavzLgy8VrzNNMxX/u0YCK4JjQTWL8JFXGDm6bbuWMFbpnRPxQEb9Y5YkXaVliC08V8Rs4Bl4D3kS11XnDnSbilrrkXSJ0csQLoh+ZIl+yl65xdDRTX07TRHgIeDzgF5fjsekh4m6AMS7694NUUJfPxgM2g+E4pTueZblJnKUdRjaKcAflkJkinkfwO7opvU2OJAX4to8X4fPgjMXJsduSz3j9OovnFH7rBpHLIlzWz9ERJZ5PgMUM14vQv7yFv81F3FHQAsSCO+icaAI6gTZC7xroBU7zWU4648RY5lO31E9X4Ww6VqqzT8dAbzoRjPwI5jEsJ/MRsCFAvx8V4V3KTemIzYPVlg4MRxZFMNY1RPicn4GzOZuMvC+8StNBuYAV/gZOMVxfxDf0MY7xBH3PFZTBuHJiVYc4+GEfj08jl0E25W8CXfjcjitsAp8LuEs55bcUeVcHWL2mrY9ZJpeZzHV8VnBt9RzUjWl2mWqWheVq4H0c0GzeeBh5KoKt2chyEa7ioZfPFZTOgV/GVa4d9NJHvsSn7sbK5bpLpacJA7flwNcVkzhDuT8d2R+g3wPUInAMGSv6kAsOBXAT5wcc68EifIk7kKeBUzkLZ/IcjFLnUxBZqiqtJ7a/YZw8hgsByopTZW330ZdHQgH9wtrA8mqzljgvx3kMclSAbXK0ittt2Z4zuJNoOWmZ2Ok+dbbmpHJkpp9v2syyBeA6t+cQDVInAuOac/sHl+3IvEid5Xl2IeCNljTwVpfBcTPwPstK2MYz3jmroxkexUkn5YAIP+BRZ1m+q8SoF8q9YgX77QSb1SXLAJ9+mi19oTi3zwR5RyrOl5iBNJTp/PAIV+9U1dCvRbg8J1BVl93DvOx85GHg7QHqb+axPYc4eX+xGH2WRXeVCHcFCS63Sd/xPM9St0XXLKs/xqXdF2kwR/qrt2p9e7dZvN+YydSPZUR0mzQ6HJmkC6eC/HZOs/hNPwXDWccXdJiH6SCX+Y+LfL0j/CYc7qLzunLDtvUob5PQvUbfbns6f8YKp08ub6wcWSjKeF7VNwF0421TV+Xxy1G6ZmyeA53BEDo/9M1V39u9TcqMwLhnLf5qh5oW/6qbyCvJO1VaS58OVFCeoAQXvU6Wywgvx8VFnzbn0WDSzThGOXBOu+TtY3G45EYw5olBjWszcDw9QX6yRjn8bZiV/QrYa8l/kW7CwbyCdPJ0UDO1jE8dHVS51Tzue82NzyU67f0GJlb5l7WnrxX15P3wE6qMFvTAabGNW1PlQdNyBbyt7poDYftPVkXu791AK54h1/mtazxDc8D6CM/pGL5ZF/Bl65SLXime286/Q7ID/DPkHqHvdWb35/vG2gjaHU9Mu46z/xmqfudfLTku/0xpwM+yPI5hlkd9begEMmNVgo6fHfwmz72dv5/8JcAAKqky1B3apxsAAAAASUVORK5CYII="
+                                        alt="Awesome Image" /></div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="1">
+                                <div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAaCAYAAAB8WJiDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDowOEVCNTg3RTA4MjA2ODExODIyQUVGNUVFNkQ5RUQ4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowMTE0MEU2RjZCM0UxMUU4QjFCMjhCNEZGMzM4NDEzOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowMTE0MEU2RTZCM0UxMUU4QjFCMjhCNEZGMzM4NDEzOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MDhFQjU4N0UwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MDhFQjU4N0UwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiLz4gPC9yZGY6RGVzY3Jp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"
+                                        alt="Awesome Image" /></div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="2">
+                                <div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAdCAYAAABhXag7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBOTJBMzk5QjA4MjA2ODExODIyQUVGNUVFNkQ5RUQ4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxMjFCRTk1NjZCM0UxMUU4ODc3MUYyQzc4RDhBMTU0RiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxMjFCRTk1NTZCM0UxMUU4ODc3MUYyQzc4RDhBMTU0RiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTkyQTM5OUIwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTkyQTM5OUIwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiLz4gPC9yZGY6RGVzY3Jp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"
+                                        alt="Awesome Image" /></div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="3">
+                                <div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAYCAYAAAAxkDmIAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1Q0FFQkE3OTA4MjA2ODExODIyQUVGNUVFNkQ5RUQ4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoyMzEyMTBDQjZCM0UxMUU4QUJGOTkwQkIxQUMwQjAzQiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoyMzEyMTBDQTZCM0UxMUU4QUJGOTkwQkIxQUMwQjAzQiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NUNBRUJBNzkwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NUNBRUJBNzkwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiLz4gPC9yZGY6RGVzY3Jp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"
+                                        alt="Awesome Image" /></div>
+                            </div>
+                            <div class="swiper-slide" data-swiper-slide-index="4">
+                                <div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAVCAYAAACNDipWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpFODEwODU5NjA4MjA2ODExODIyQUVGNUVFNkQ5RUQ4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozNkM0MEM4QzZCM0UxMUU4QjJBRjk1MkY4QUMzMDM5QiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozNkM0MEM4QjZCM0UxMUU4QjJBRjk1MkY4QUMzMDM5QiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTgxMDg1OTYwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTgxMDg1OTYwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5E4h35AAAGh0lEQVR42uyaC0yWVRjHESxvqFyE0ETzMkUlzMmaMy9I09Ko6dI2yybmnF1kw1Gm4XA5u2yma2FlWK4knYlJWMMShwulZCpCgVx0mRlXDQhQUoGv/2P/dzs7nff7uMTE9T3bbx/ve55z3vc8z7k8z3np4XA4PGwkHCwDp8BR8KuHW+446UEHjwMbQSs4BsaDkWAMWAkCwANgLOjrpL0WsA/sdJu2ezn4AFjAezkgmjNWHB0EDgFR7AfmgWf4e5ehTRkk/qDObd7u42CZtdOU++KcCaDcSd17uITH8m9VhoPfblOfZnPAyqrz1//dwZ6Ge1WcneUu6ore22AUeAvc7CZ9Esd6g17u+ftvB+eBh8GP7WjjKngNRIDLbpN2Pwd7cm/14H47soNt/QDmc692JdNBKigGp8FmMIBl8rsJ5IIS6j1k044MxnRwDhzmtUl8wRZQwNgiQ4k5VJGYIg5kg/Nsc7FSHgb2g1L2dxm3ozIwFEwEhdyyXgdnqPsJuFdp5wUQYrPtrQVevPZm8JvLdtLADK3Oe2ADs5402uIEeO5WqezB4BhoAFG8tmM66A/62JTLnl4EZjhpYwloARfAdvA1aAargD/4GVSAtWA5yGL501o7ct0KzoB3wAFwHRx0/CMDqTcIlILLIAG8BDKps0Zp725wmG1+C95nX+TZ3uBBcBWUgC1gL7gBjrOt+8Fj/DsHVIMPwMe07SXgy2flgTSDbaTdRtALDAD5bGc9bZFJ2y1T6ojvzvLdMmmLbL7Heg8+VIwT4sK5wgka8XtDWU8QDvbzgdEGnfvANb5Ib+X+YNZPAvVgtFLmRf0/QRDvBfA6nfUs3fl0kOrgz8DvfIY6ED8CN8Ew3lvHetGaXjDfQZx9UhvcEXSy7uACDixLbwoHShyvxWFNnCxqP8tBMq8Taauxms4hDoKhioNFYrT3ThE9uVgEjtA4rhw8AWwE4w1lMgNmgSHAj055VdN5k0YdbqjvzQ4lGsrC2Yl1vI6lI8cYdFMUB/vzeXEGvUDOhheBJ2dKuk2/57DNxw1lOwwOXmDQKwQ7lYEu779YKZ/Nuo9w8DdywOvthFIvQXFwMZ2q6j0hSrL/pnDNz2vD3in7SwI4ayi7wRMvib5rwKMgimmLJTPBSXDRUF/2rz5M2XQ5xah9Kq+ncq8pNege1E7jeoJGMFkjGNSCITzQCeAhjV3MIFnCd4aybwz3Cgz3apTIXuKALLBQKV8CKsAREMq46LhN25e0uKTQEPvI82513sqDO3IUGcKgzIeBgJxkXQDNdPgiBhgZ1PcD+TZt+ShRuUkkrx7EvwNBtY1epfK3P3+3O+lDjdJumY3OYHCFfdLlD8O9622w3S6wjYFUK4O+JNrQjzq1Tmyhnj3Y5vuWg691MHIuJr6MGmXGNoBEHldW0mE+PDypp65J6jSn6NJfcUCDFpXqEbPe5kpG6yaRVWCENsh0EQMOdPJeHZH9tNNcrqDSTrI6+ziwTNKPtmxXHhzUiXSrlmnFCKYScpS5R07K6Ixm5Rh0CketLvkc+ZGGMhnRo7lKWMtUqDLSVYnUlvZmLsOnbZD3K+JvpE3/ingGP8lQNq+DNqtnWrOIy/NPyuomS24TmGWoN4jfDnLb4+Awm+WnPdKq/L2Uo3AFZ10j7++gobYaDllE53PmneO1snj+fsrf3Rz1GzS9MJ6jW1LNfXU1B4QqgVwmI7i/JjF3NOXcaRx8q7X7wdrz2iu7OEDmsO+WNLGvC/mRR5WXufK27YMOI66v2hBBu8KXUbCDqYeE9F+CyZpeLHUkf90K9oAq8BRTi3OgjNFtFCPJViWCtniD7XwBngebQR3zTTVNCmDuWgNeYUS8hs+UexOVKD6Hac8+5qRHqefFOiLbwEzwLDjP6FuPoocZ7CPR7m7tnpUatTD7UMv8+N5VTIGk7Q9pi3gX7QrTHMqFJMeT/gMnJ2sd7GWjNxdkgEo6JJmOsDr2Lg8nKphzP2lzqBLD9ENyyotgEw1Ro+WrfhxMRSwrpbF0R/Rl+lFAvQIewFjly5kLX2FqIu85jgcX0tYIkMrBor9vvHZAYZHNAxaTnXw40EpoqyxOBFVHBt4KQ13J31PVz4WylO3t5DIdwVTpdn5NupNkFNO9pUqA1SUfG5oY1XVWfnH7rF0SzQwmtau/Jp1UIt3OikMJqtzi3PbRdG6X2cvKg+UgIsbD+b/jtEUk+V6l5HFusZfenFSJXfmQvwUYAGeyvx8Izw17AAAAAElFTkSuQmCC"
+                                        alt="Awesome Image" /></div>
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0">
+                                <div class="item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAXCAYAAADAxotdAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpBNjJBMzk5QjA4MjA2ODExODIyQUVGNUVFNkQ5RUQ4QSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpGODI1RkRDQjZBRjAxMUU4QTAxMEUwOTM2QzgzNjdCRiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpGODI1RkRDQTZBRjAxMUU4QTAxMEUwOTM2QzgzNjdCRiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6QTYyQTM5OUIwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6QTYyQTM5OUIwODIwNjgxMTgyMkFFRjVFRTZEOUVEOEEiLz4gPC9yZGY6RGVzY3Jp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"
+                                        alt="Awesome Image" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="contact-section sec-pad">
+                <div class="thm-container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="contact-form-content">
+                                <div class="title text-undefined"><span>Contact with us</span>
+                                    <h2>Send Message</h2>
+                                </div>
+                                <form action="inc/sendemail.php" class="contact-form"><input type="text" name="name" placeholder="Your full name" /><input type="text" name="email" placeholder="Your email address" /><textarea name="message" placeholder="What you are looking for?"></textarea><button type="submit"
+                                        class="thm-btn yellow-bg">Submit Now</button>
+                                    <div class="form-result"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="contact-info text-center">
+                                <div class="title text-center"><span>Contact info</span>
+                                    <h2>Details</h2>
+                                </div>
+                                <div class="single-contact-info">
+                                    <h4>Address</h4>
+                                    <p>88 New Street, Washington DC United States, America</p>
+                                </div>
+                                <div class="single-contact-info">
+                                    <h4>Phone</h4>
+                                    <p>Local: 222 999 888 Mobile: 000 8888 999</p>
+                                </div>
+                                <div class="single-contact-info">
+                                    <h4>Email</h4>
+                                    <p>needhelp@printify.com inquiry@printify.com
+                                    </p>
+                                </div>
+                                <div class="single-contact-info">
+                                    <h4>Follow</h4>
+                                    <div class="social"><a href="#" class="fab fa-twitter hvr-pulse"></a><a href="#" class="fab fa-pinterest hvr-pulse"></a><a href="#" class="fab fa-facebook-f hvr-pulse"></a><a href="#" class="fab fa-youtube hvr-pulse"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="google-map__contact-page"><iframe title="template google map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4562.753041141002!2d-118.80123790098536!3d34.152323469614075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80e82469c2162619%3A0xba03efb7998eef6d!2sCostco+Wholesale!5e0!3m2!1sbn!2sbd!4v1562518641290!5m2!1sbn!2sbd"
+                    class="map__contact-page" allowfullscreen=""></iframe></div>
+            <footer class="footer">
+                <div class="thm-container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-widget about-widget">
+                                <div class="title">
+                                    <h3>About Printify</h3>
+                                </div>
+                                <p>Printify is an online design,copying and printing company that is passionate about great design and the difference it can make to our customers and the world.</p>
+                                <form action="#" class="footer-subscribe"><input type="text" name="email" placeholder="Email address" /><button type="submit"><i class="fa fa-angle-right"></i></button></form>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="footer-widget links-widget explore">
+                                <div class="title">
+                                    <h3>Explore</h3>
+                                </div>
+                                <ul class="link-list">
+                                    <li><a href="/about">About</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/services">Our Services</a></li>
+                                    <li><a href="/pricing">Plans &amp; Pricing</a></li>
+                                    <li><a href="/about">How it Works</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-widget post-widget services">
+                                <div class="title">
+                                    <h3>Latest Posts</h3>
+                                </div>
+                                <div class="post-widget">
+                                    <div class="single-post-widget"><a class="date" href="/blog-details">July 12, 2019</a>
+                                        <h3 class="post-title"><a href="/blog-details">A Clean Website Gives More Experience To The Visitors</a></h3>
+                                    </div>
+                                    <div class="single-post-widget"><a class="date" href="/blog-details">July 12, 2019</a>
+                                        <h3 class="post-title"><a href="/blog-details">A Clean Website Gives More Experience To The Visitors</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="footer-widget contact-widget">
+                                <div class="title">
+                                    <h3>Contact</h3>
+                                </div>
+                                <p><a href="tel:000-8888-999">000 8888 999</a></p>
+                                <p><a href="mailto:needhelp@printify.com">needhelp@printify.com</a></p>
+                                <p><a href="">88 New Street, Washington DC 
+ United States, America</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="footer-bottom">
+                <div class="thm-container clearfix">
+                    <div class="float-left copy-text">
+                        <p>© Copyright
+                            <!-- -->2021
+                            <!-- -->Created by
+                            <!-- --><a href="#">Layerdrops Team</a></p>
+                    </div>
+                    <div class="social-box float-right"><a href="#" class="fab fa-twitter hvr-pulse"></a><a href="#" class="fab fa-pinterest hvr-pulse"></a><a href="#" class="fab fa-facebook-f hvr-pulse"></a><a href="#" class="fab fa-youtube hvr-pulse"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script id="__NEXT_DATA__" type="application/json">
+        {
+            "props": {
+                "pageProps": {}
+            },
+            "page": "/index-2",
+            "query": {},
+            "buildId": "zOj-rZlJclAbZINu-kMH1",
+            "runtimeConfig": {},
+            "nextExport": true,
+            "autoExport": true,
+            "isFallback": false
+        }
+    </script>
+    <script nomodule="" src="/_next/static/chunks/polyfills-0144d5b481bf411d4a2c.js"></script>
+    <script src="/_next/static/chunks/main-11b9c9a9b688a49aa427.js" async=""></script>
+    <script src="/_next/static/chunks/webpack-50bee04d1dc61f8adf5b.js" async=""></script>
+    <script src="/_next/static/chunks/framework.d2e6186d001d2275b0af.js" async=""></script>
+    <script src="/_next/static/chunks/commons.124d507c7ca523d1158f.js" async=""></script>
+    <script src="/_next/static/chunks/pages/_app-f757b599e952af083e8c.js" async=""></script>
+    <script src="/_next/static/chunks/acc17c9f5149dfc55a5e1bab6f73a798bd8a50cc.3bfaba4f46872ff70d86.js" async=""></script>
+    <script src="/_next/static/chunks/d63c7bc0eb1546891a38250081b4f73e1bdf5be4.5f566de1c7ef8d8e1b69.js" async=""></script>
+    <script src="/_next/static/chunks/8ef2371b12a2fe8fb95a47ca30ae6fb034309188.4d32e18a717ec11f8dbf.js" async=""></script>
+    <script src="/_next/static/chunks/e9d1e1c6b77f1ea8907e4a5a6a11c9d3d88499a6.93c729659022d59b83c0.js" async=""></script>
+    <script src="/_next/static/chunks/pages/index-2-2a288c8670641db97c37.js" async=""></script>
+    <script src="/_next/static/zOj-rZlJclAbZINu-kMH1/_buildManifest.js" async=""></script>
+    <script src="/_next/static/zOj-rZlJclAbZINu-kMH1/_ssgManifest.js" async=""></script>
+</body>
+
+</html>
